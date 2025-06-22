@@ -1,0 +1,143 @@
+Questions on implicit type casting
+
+1. -128
+2. 5
+
+3. 2.500000[wrong] ---> (int)5/(float)2 = 2 ---> (float) 2 ---> 2.000000
+4. 2.500000[wrong] ---> (int)5/(float)2 = 2 ---> (float) 2 ---> 2.000000
+
+5. 10
+
+Questions on explicit type casting
+
+6. 10
+7. 3
+8. 2.500000[wrong] ---> (int)5/(int)2 = 2 ---> (float) 2 ---> 2.000000
+9. 6
+10. 9.800000 [wrong]--->(int) 7.8 + 2 ---> 7+2 ---> results in 9.
+
+Questions on char type casting
+
+11. 0
+12. 66
+13. '[' (character after capital 'Z')
+14. -129 [wrong]--->  
+
+char(-129){first implicit wrap around}
+==> -129 + 128 = -1
+==> -1 % 256 = +255 (remainder) | -1 (quotient)
+==> 255-128 = +127
+
+==> final ans. 127 
+
+
+15. D
+
+Questions on Mixed type casting
+
+16. 1
+17. 300
+18. 5
+19. 0
+20. -1[wrong] --->  4294967295
+
+Type Casting and Bitwise Operations
+
+21. 20
+22. -1 [wrong] ---> 255 {it is within the range}
+23. 65535 [wrong]---> {4294967295}
+24. 130 [wrong] ---> implicit wrap around(first) ---> -126 
+25. -7
+
+Bonus Super Tricky Questions
+
+26. 1.500000 [wrong] ---> %d is incompatible for double type
+27. 4
+28. 65.0 [wrong] ---> 65.000000
+29. 2.500000[wrong]--->(implicit wrap around)---> 5/2-->2-->float 2.000000
+30. 300 ---> unsigned char (implicit wrap around) ---> 300 % 256 = 44
+
+INCREMENTATION DECREMENTATION QUESTIONS
+
+A. Basic Operator Precedence & Associativity
+
+1. 8
+2. 35  [49]
+3. 3
+4. 6
+5. 10  [20]
+
+B. Complex Nested Expressions
+
+6. 10
+7. 9
+8. 24 
+9. 6
+10. 13
+
+C.  Incrementation with Bitwise & Logical Operations
+
+11. 25  
+12. 13  
+13. 7   
+14. 1   
+15. 3   
+
+D. Incrementation Inside Loops & Conditionals
+
+16. 1 , 9		[5,5]
+
+que.
+int i = 0, j = 10;
+while (++i < --j) {}
+printf("%d %d", i, j);
+
+
+17. 1 , 4		[4,2]
+18. 7 , 5
+19. 0			[-1]
+20. 4 , 6		[5,5]
+
+
+
+
+
+POWER BI
+
+Sales Performance Optimization for Global Tech. Ltd. Report 
+
+1 . Target Vs Actual Amount in Sales and Profit
+
+sum(Profit Target) < sum(Profit) 
+sum(Target Sales) < sum(Sales Amount)
+
+Overall --> Profitable
+
+2. Yearly Avg. Sales Amount Required --> appx. 5K
+   Highest Avg. Sales Amount Required --> over 0.7M (year - 2020)
+   Lowest Avg. Sales Amount Required --> over 0.2M (year - 2023)
+
+   Yearly Avg. Profit Target Required --> appx. 0.7M
+   Highest Avg. Profit Target Required --> over 0.16M (year - 2020)
+   Lowest Avg.  Profit Target Required --> over 60K (year - 2023)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
